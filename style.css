@@ -1,0 +1,158 @@
+    /*header */
+    header {
+        width: 100%;
+        min-height: 500px;
+        padding-top: 3em;
+    }
+    header {
+        background: url(images/adopt_a_pet.jpg) no-repeat rgb(255, 255, 255);
+        background-size: 1500px;
+        background-position: 0 -100px;
+    }
+    .main-header {
+        background-color: chartreuse;
+        width: 700px;
+        margin: 2em auto 0 auto;
+        min-height: 100px;
+        height: 50px;
+        float: left;
+    }
+    .main-header .logo img {
+        width: 100px;
+        height: 100px;
+        margin: 0 2em 0 0;
+        float: left;
+    }
+    /* navigation*/
+    .main-menu {
+        margin-left: 227px;
+        font-weight: 400;
+    }
+    .main-menu ul li {
+        list-style-type: none;
+        display: inline;
+        float: left;
+        padding-left: 25px;
+        padding-right: 25px;
+        border-left: 1px solid rgba(202,204,202,0.6);
+        line-height: 60px;
+        text-transform: uppercase;
+        font-size: 30px;
+    }
+    .main-menu ul li a {
+        text-decoration: none;
+        color: red;
+    }
+    .main-menu ul li a:hover {
+        color: blue;
+    }
+    .main-menu ul li.active {
+        background: black;
+        border: none;
+    }
+    .main-menu ul li.active a {
+        color: #fff;
+    }
+    /* main*/
+    main h1 {
+        font-family: Arial, Helvetica, sans-serif;
+        color: #08fa00;
+        text-decoration: underline;
+    }
+    main h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #55ACEE;
+    }
+    main h3 {
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: #55ACEE;
+    }
+    /* footer */
+    section {
+        width: 100%;
+        background-color: orange;
+    }
+    section h2 {
+        font-size: 30px;
+    }
+    section li {
+        font-size: medium;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-weight: bold;
+    }
+    footer { 
+        width: 100%;
+        height: 155px;
+        padding-bottom: 1em;
+        background-color: chartreuse;
+    }
+    footer #nondisclaimer .copy {
+        padding: 3.5em 3.5em 3.5em 13em;
+        float: center;
+        font-size: 0.9em;
+    }
+    footer #disclaimer p {
+        font-size: 0.85em;
+        text-align: center;
+    }
+
+    /* activities */
+    table {
+        width: 100px;
+    } 
+    caption {
+        background: orange;
+        height: 40px;
+        color: #fff;
+        font-size: 1.3em;
+        font-weight: bold;
+    }
+    thead {
+        background: chartreuse;
+    }
+    tbody {
+        background: #eeffe6;
+        text-align: center;
+    }
+    th,td {
+        width: 225px;
+        height: 75px;
+        vertical-align: middle;
+        border: solid 1px;
+        border-color: black;
+    }
+    th:first-child {
+        width: 125px;
+        height: 50px;
+        background: chartreuse;
+        color: black;
+    }
+    td:first-child {
+        font-weight: bold;
+        background: darkblue;
+        color: #fff;
+    }
+
+    /* Contact */
+    label {
+        display: block;
+        margin: 15px 0 0 0; /* top right bottom left */
+      }
+      input {
+        width: 300px;
+      }
+      input[type="radio"] {
+        width: 25px;
+      }
+      textarea {
+        width: 500px;
+      }
+      input[type="submit"] {
+        display: block;
+        text-align: center;
+        margin: 20px 0 10px 0;
+        width: 100px;
+      }
+      span:first-child {
+        width: 200px;
+      }
