@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Pet Adoption</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body id="gallery">
+
+    <header>
+        <div class="main-header">
+            <div class="logo">
+                <img src="images/dog_logo.png" alt="Pet Adoption" width="125">
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pick-a-pet.html">Adoptable Pets</a></li>
+                    <li class="active"><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+
+<main>
+        <ul id="Pets">
+    <!--li id="photo1">
+        <img src="images/animal1.jpg">
+        <h1 class="names">Cooper</h1>
+        <p class= "description">Just Hanging</p></li>
+
+    <li id="photo2">
+        <img src="images/animal2.jpg">
+        <h1 class="names">Jack and Kane</h1>
+        <p class="description">Just Hanging</p></li>
+
+    <li id="photo3">
+        <img src="images/animal3.jpg">
+        <h1 class="names">Campbell</h1>
+        <p class="description">Just Hanging</p></li>
+    
+    <li id="photo4">
+        <img src="images/animal4.jpg">
+        <h1 class="names">Babe</h1>
+        <p class="description">Just Hanging</p></li>
+
+    <li id="photo5">
+        <img src="images/animal5.jpg">
+        <h1 class="names">Mike</h1>
+        <p class="description">Just Hanging</p></li>
+
+    <li id="photo6">
+        <img src="images/animal6.jpg">
+        <h1 class="names">Jake</h1>
+        <p class="description">Just Hanging</p></li>
+
+    <li id="photo7">
+        <img src="images/animal7.jpg">
+        <h1 class="names">Jane</h1>
+        <p class="description">Just Hanging</p></li>
+
+    <li id="photo8">
+        <img src="images/animal8.jpg">
+        <h1 class="names">Lucy</h1>
+        <p class="description">Just Hanging</p></li>
+
+    <li id="photo9">
+        <img src="images/animal9.jpg">
+        <h1 class="names">Saucy</h1>
+        <p class="description">Just Hanging</p></li>
+
+    <li id="photo10">
+        <img src="images/animal10.jpg">
+        <h1 class="names">Booster</h1>
+        <p class="description">Just Hanging</p></li-->
+        </ul>
+        
+    </main>
+
+        
+
+    <footer>
+
+        <div id="nondisclaimer">
+            <div class="copy">&copy;
+                Copyright 2022 :: WeLovePets.com
+            </div>
+            <div id="disclaimer">
+                <p>This website is designed and created solely for educational purposes only at Westcliff University.
+                    All contents are not intended for any commercial gain or use.</p>
+            </div>
+    </footer>
+    
+    <script>
+        var photos = []; //Declare an empty array to store img element
+        var fileNames = []; //Declare an empty element to store file names
+        var imageList = []; //Declare an empty array to store html list that contain an image
+        var image; //Declare an empty variable to store the assembled list code
+        var openList = "<li id='photo1'>"; //Declare a variable to contain open list tag
+        var closeList = "</li>"; //Declare a variable to contain a close list tag
+        var openCaptionTag = "<h1 class = 'names'>" //Declare variable for list of names
+        var closeCaptionTag = "</h1>" //Declare close of list names
+        var nameTexts = ["Cooper", "Jack and Kane", "Campbell", "Babe", "Mike", "Jake", "Jane", "Lucy", "Saucy", "Booster"]; //Names for the Pictures
+        var descTexts = ["Just Hanging" , "Play Fight" , "Love Soccer" , "Smile Big" , "I'm coming!" , "Play Ball" , "Afternoon Hang" , "Let's Read" , "Pure Joy!" , "Scooting along"]; //Names when hovering
+        var descriptionOpen = "<p class='description'>";
+        var descriptionClose = "</p>";
+        //Create loop to create 10 images starting with index of 0
+        for (var i = 0; i < 10; i++) {
+            fileNames.push("animal" + (i + 1));
+            photos.push("<img src='images/" + fileNames[i] + ".jpg'>"); //Assemble file name into image element and store in an array
+            image = openList + photos[i] + openCaptionTag + nameTexts[i] + closeCaptionTag + descriptionOpen + descTexts[i]  + closeCaptionTag + closeList; //Assemble image element from array with list
+            imageList.push(image); //Store(push) the assembled list codes into an array
+        }
+        //Display all six image codes stored in the array
+        document.getElementById("Pets").innerHTML = imageList.join(" "); //.join (" ") to get rid of ,
+        
+       
+        
+            
+    
+
+    </script>
+</body>
+</html>
