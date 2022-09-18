@@ -110,42 +110,9 @@
     }
 
     /* activities */
-    table {
-        width: 100px;
-    } 
-    caption {
-        background: orange;
-        height: 40px;
-        color: #fff;
-        font-size: 1.3em;
-        font-weight: bold;
+    #dognames {
+        color: orange;
     }
-    thead {
-        background: chartreuse;
-    }
-    tbody {
-        background: #eeffe6;
-        text-align: center;
-    }
-    th,td {
-        width: 225px;
-        height: 75px;
-        vertical-align: middle;
-        border: solid 1px;
-        border-color: black;
-    }
-    th:first-child {
-        width: 125px;
-        height: 50px;
-        background: chartreuse;
-        color: black;
-    }
-    td:first-child {
-        font-weight: bold;
-        background: darkblue;
-        color: #fff;
-    }
-
     /* Contact */
     label {
         display: block;
