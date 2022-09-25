@@ -168,11 +168,18 @@
               bottom: 170px;
               left: 40px;
               visibility: hidden;
+            
           }
     
-          #names:hover+.description {
+          #Pets #photo:hover .description {
               background-color: black;
               color: #08fa00;
               visibility: visible;
     
+          } 
+
+          ul li .description:hover .info_box {
+            background-color: black;
+            color: #08fa00;
+            visibility: visible;
           }

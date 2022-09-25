@@ -78,6 +78,73 @@
         
     </main>
 
+    <!-- LAB ASSIGNMENT -->
+<div id="info_box">
+    <div id="info_box" onmouseover="displayInfo(which)">
+      <div id="info_title">Cooper</div>
+      <div id="info">I love chewing on my tennis ball!</div>
+      <p id="closeInfo"></p>
+    </div>  
+    
+    <div id="info_box" onmouseover="displayInfo(which)">
+      <div id="info_title">Jack and Kane</div>
+      <div id="info">I like to play fight with my brother</div>
+      <p id="closeInfo"></p>
+    </div>
+
+    <div id="info_box" onmouseover="displayInfo(which)">
+      <div id="info_title">Campbell</div>
+      <div id="info">Soccer is my favorite sport to play</div>
+      <p id="closeInfo"></p>
+    </div>  
+
+    <div id="info_box" onmouseover="displayInfo(which)">
+      <div id="info_title">Babe</div>
+      <div id="info">When someone calls me for a treat, I Come with a smile on my face</div>
+      <p id="closeInfo"></p>
+    </div>  
+    
+    <div id="info_box" onmouseover="displayInfo(which)">
+      <div id="info_title">Mike</div>
+      <div id="info">Running is my favorite thing to do in my free time</div>
+      <p id="closeInfo"></p>
+    </div>  
+      
+    
+    <div id="info_box" onmouseover="displayInfo(which)">
+      <div id="info_title">Jake</div>
+      <div id="info">Chasing after the ball is the most fun thing ever!</div>
+      <p id="closeInfo"></p>
+    </div>  
+    
+    <div id="info_box" onmouseover="displayInfo(which)">
+      <div id="info_title">Jane</div>
+      <div id="info">Relaxing with my stuffed animal is so much fun</div>
+      <p id="closeInfo"></p>
+    </div>  
+    
+    <div id="info_box" onmouseover="displayInfo(which)">
+      <div id="info_title">Lucy</div>
+      <div id="info">I love listening to my mom read</div>
+      <p id="closeInfo"></p>
+    </div>  
+
+    <div id="info_box" onmouseover="displayInfo(which)">
+      <div id="info_title">Saucy</div>
+      <div id="info">This is my favorite toy to play with!</div>
+      <p id="closeInfo"></p>
+    </div>  
+
+    <div id="info_box" onmouseover="displayInfo(which)">
+      <div id="info_title">Booster</div>
+      <div id="info">I love to play and chase a ball!</div>
+      <p id="closeInfo"></p>
+    </div> 
+    <!-- END LAB ASSIGNMENT -->
+  
+    
+       
+
         
 
     <footer>
@@ -97,21 +164,28 @@
         var fileNames = []; //Declare an empty element to store file names
         var imageList = []; //Declare an empty array to store html list that contain an image
         var image; //Declare an empty variable to store the assembled list code
+        var imagefilenames = [];
         var openList = "<li id='photo'>"; //Declare a variable to contain open list tag
         var closeList = "</li>"; //Declare a variable to contain a close list tag
         var openCaptionTag = "<h1 id = 'names'>" //Declare variable for list of names
+        var captions = [];
+        var captionTexts = ["Cooper", "Jack and Kane", "Campbell", "Babe", "Mike", "Jake", "Jane", "Lucy", "Saucy", "Booster"];
         var closeCaptionTag = "</h1>" //Declare close of list names
-        var nameTexts = ["Cooper", "Jack and Kane", "Campbell", "Babe", "Mike", "Jake", "Jane", "Lucy", "Saucy", "Booster"]; //Names for the Pictures
-        var descTexts = ["Just Hanging" , "Play Fight" , "Love Soccer" , "Smile Big" , "I'm coming!" , "Play Ball" , "Afternoon Hang" , "Let's Read" , "Pure Joy!" , "Scooting along"]; //Names when hovering
-        var descriptionOpen = "<p class='description'>";
-        var descriptionClose = "</p>";
+        var descriptionOpen = "<p class='description'(";
+        var descriptionClose = ")'>"
+        var closeDescriptionTag = "</p>"
+        var descTexts = ["Just Hanging" , "Play Fight" , "Love Soccer" , "Smile Big" , "I'm coming!" , "Play Ball" , "Afternoon Hang" , "Let's Read" , "Pure Joy!" , "Scooting along"];
+        var descriptions = [];
+
         //Create loop to create 10 images starting with index of 0
         for (var i = 0; i < 10; i++) {
             fileNames.push("animal" + (i + 1));
             photos.push("<img src='images/" + fileNames[i] + ".jpg'>"); //Assemble file name into image element and store in an array
-            image = openList + photos[i] + openCaptionTag + nameTexts[i] + closeCaptionTag + descriptionOpen + descTexts[i]  + closeCaptionTag + closeList; //Assemble image element from array with list, must open and close caption/description
+            captions.push(openCaptionTag + captionTexts[i] + closeCaptionTag);
+            descriptions.push(descriptionOpen + [i] + descriptionClose + descTexts[i] + closeDescriptionTag);  
+            image = openList + photos[i] + descriptions[i] + captions[i] + closeList; //Assemble image element from array with list, must open and close caption/description
             imageList.push(image); //Store(push) the assembled list codes into an array
-        }
+            }
         //Display all six image codes stored in the array
         document.getElementById("Pets").innerHTML = imageList.join(" "); //.join (" ") to get rid of ,
         
