@@ -39,13 +39,23 @@
             <legend>User personal information</legend>
             <label>Enter your full name</label><br>
             <input type="text" name="name"><br>
-            <label>Enter your email</label><br>
-            <input type="email" name="email"><br>
-            <label>Enter your phone</label><br>
-            <input type="text" name="phone"><br>
-            <label>How should we contact you?</label>
-                <input type="radio" name="contact" value="email"/>Email
-                <input type="radio" name="contact" value="phone"/>Phone </form>
+            <label>Enter your gender</label><br>
+            <input type="gender" name="gender"><br>
+
+        <div id="contacting">
+            <label>How do we contact you?</label>
+            <select name="contacting" id="contacting">
+                <option>Select One</option>
+                <option value="phone" id="phone" name="phone" onclick="showFunction1()">Phone</option>
+                <option value="email" id="email" name="email"onclick= "showFunction2()">Email</option>
+            </select>
+        </div>
+
+<div id="emailMe"></div>
+
+<div id="phoneMe">
+   
+</div>
            
                 <label>What information are you looking for?</label>
             <select>    
@@ -53,21 +63,23 @@
                 <option>Adoption process</option>
                 <option>Other</option>
             </select>
-            <br>How did you hear about us?<br>
+
+            <label>How did you hear about us?</label>
             <textarea rows="5" cols="30"></textarea><br>
-            <input type="submit" value="sign-up">
+            <input type="submit" value="Sign-up">
     </form>
 </main>
 
 <footer>
 
     <div id="nondisclaimer"><div class="copy">&copy;
- Copyright 2020 :: GreatCliffs.com
+ Copyright 2020 :: WeLovePets.com
     </div>
 
 <div id="disclaimer">
 <p>This website is designed and created solely for educational purposes only at Westcliff University. All contents are not intended for any commercial gain or use.</p>
 </div>
+<script src="codes.js"></script>
 </footer>
 </body>
 </html>
