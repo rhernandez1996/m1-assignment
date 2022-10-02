@@ -1,199 +1,139 @@
 <!DOCTYPE html>
 <html>
-
-<head>
+  <head>
     <title>Pet Adoption</title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body id="gallery">
-
+  <body id="gallery">
     <header>
-        <div class="main-header">
-            <div class="logo">
-                <img src="images/dog_logo.png" alt="Pet Adoption" width="125">
-            </div>
-            <nav class="main-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pick-a-pet.html">Adoptable Pets</a></li>
-                    <li class="active"><a href="gallery.html">Gallery</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+      <div class="main-header">
+        <div class="logo">
+          <img src="images/dog_logo.png" alt="Pet Adoption" width="125" />
         </div>
+        <nav class="main-menu">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pick-a-pet.html">Adoptable Pets</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-
-<main>
-        <ul id="Pets">
-    <!--li id="photo"><img src="images/animal1.jpg">
-        <h1 class="names">Cooper</h1>
-        <p class= "description">Just Hanging</p></li>
-
-    <li id="photo"><img src="images/animal2.jpg">
-        <h1 class="names">Jack and Kane</h1>
-        <p class="description">Just Hanging</p></li>
-
-    <li id="photo"><img src="images/animal3.jpg">
-        <h1 class="names">Campbell</h1>
-        <p class="description">Just Hanging</p></li>
-    
-    <li id="photo">
-        <img src="images/animal4.jpg">
-        <h1 class="names">Babe</h1>
-        <p class="description">Just Hanging</p></li>
-
-    <li id="photo">
-        <img src="images/animal5.jpg">
-        <h1 class="names">Mike</h1>
-        <p class="description">Just Hanging</p></li>
-
-    <li id="photo">
-        <img src="images/animal6.jpg">
-        <h1 class="names">Jake</h1>
-        <p class="description">Just Hanging</p></li>
-
-    <li id="photo">
-        <img src="images/animal7.jpg">
-        <h1 class="names">Jane</h1>
-        <p class="description">Just Hanging</p></li>
-
-    <li id="photo">
-        <img src="images/animal8.jpg">
-        <h1 class="names">Lucy</h1>
-        <p class="description">Just Hanging</p></li>
-
-    <li id="photo">
-        <img src="images/animal9.jpg">
-        <h1 class="names">Saucy</h1>
-        <p class="description">Just Hanging</p></li>
-
-    <li id="photo">
-        <img src="images/animal10.jpg">
-        <h1 class="names">Booster</h1>
-        <p class="description">Just Hanging</p></li-->
-        </ul>
-        
+    <main>
+      <ul id="Pets"></ul>
     </main>
 
     <!-- LAB ASSIGNMENT -->
-<div id="info_box">
-    <!-- <div id="info_box" onmouseover="displayInfo(which)">
-      <div id="info_title">Cooper</div>
-      <div id="info">I love chewing on my tennis ball!</div>
-      <p id="closeInfo"></p>
-    </div>  
-    
-    <div id="info_box" onmouseover="displayInfo(which)">
-      <div id="info_title">Jack and Kane</div>
-      <div id="info">I like to play fight with my brother</div>
-      <p id="closeInfo"></p>
+    <div id="info_box" onclick="displayInfo(which)">
+      <div id="info_title"></div>
+      <div id="info"></div>
+      <p id="closeInfo">x</p>
     </div>
-
-    <div id="info_box" onmouseover="displayInfo(which)">
-      <div id="info_title">Campbell</div>
-      <div id="info">Soccer is my favorite sport to play</div>
-      <p id="closeInfo"></p>
-    </div>  
-
-    <div id="info_box" onmouseover="displayInfo(which)">
-      <div id="info_title">Babe</div>
-      <div id="info">When someone calls me for a treat, I Come with a smile on my face</div>
-      <p id="closeInfo"></p>
-    </div>  
-    
-    <div id="info_box" onmouseover="displayInfo(which)">
-      <div id="info_title">Mike</div>
-      <div id="info">Running is my favorite thing to do in my free time</div>
-      <p id="closeInfo"></p>
-    </div>  
-      
-    
-    <div id="info_box" onmouseover="displayInfo(which)">
-      <div id="info_title">Jake</div>
-      <div id="info">Chasing after the ball is the most fun thing ever!</div>
-      <p id="closeInfo"></p>
-    </div>  
-    
-    <div id="info_box" onmouseover="displayInfo(which)">
-      <div id="info_title">Jane</div>
-      <div id="info">Relaxing with my stuffed animal is so much fun</div>
-      <p id="closeInfo"></p>
-    </div>  
-    
-    <div id="info_box" onmouseover="displayInfo(which)">
-      <div id="info_title">Lucy</div>
-      <div id="info">I love listening to my mom read</div>
-      <p id="closeInfo"></p>
-    </div>  
-
-    <div id="info_box" onmouseover="displayInfo(which)">
-      <div id="info_title">Saucy</div>
-      <div id="info">This is my favorite toy to play with!</div>
-      <p id="closeInfo"></p>
-    </div>  
-
-    <div id="info_box" onmouseover="displayInfo(which)">
-      <div id="info_title">Booster</div>
-      <div id="info">I love to play and chase a ball!</div>
-      <p id="closeInfo"></p> -->
-    </div> 
     <!-- END LAB ASSIGNMENT -->
-  
-    
-       
 
-        
+    <!-- Lighbox -->
+<div class="container">
+  <a href="#view">
+    <div class="pic">
+      <img src= "images/animal1.jpg">
+    </div>
+  </a>
+</div>
+
+<div class="container">
+  <a href="#view">
+    <div class="pic">
+      <img src= "images/animal2.jpg">
+    </div>
+  </a>
+</div>
+
+<div class="container">
+  <a href="#view">
+    <div class="pic">
+      <img src= "images/animal3.jpg">
+    </div>
+  </a>
+</div>
+
+<div class="container">
+  <a href="#view">
+    <div class="pic">
+      <img src= "images/animal4.jpg">
+    </div>
+  </a>
+</div>
+<div class="container">
+  <a href="#view">
+    <div class="pic">
+      <img src= "images/animal5.jpg">
+    </div>
+  </a>
+</div>
+<div class="container">
+  <a href="#view">
+    <div class="pic">
+      <img src= "images/animal6.jpg">
+    </div>
+  </a>
+</div>
+<div class="container">
+  <a href="#view">
+    <div class="pic">
+      <img src= "images/animal7.jpg">
+    </div>
+  </a>
+</div>
+<div class="container">
+  <a href="#view">
+    <div class="pic">
+      <img src= "images/animal8.jpg">
+    </div>
+  </a>
+</div>
+<div class="container">
+  <a href="#view">
+    <div class="pic">
+      <img src= "images/animal9.jpg">
+    </div>
+  </a>
+</div>
+<div class="container">
+  <a href="#view">
+    <div class="pic">
+      <img src= "images/animal10.jpg">
+    </div>
+  </a>
+</div>
+
+<div class="customlightbox lb-animate" id="view">
+  <div class="customlightbox-imgwrap">
+    <img class="imgsrc" id="customlightbox-img" src="">
+  </div>
+</div>
+<div id="customlightbox-controls" class="lb-animate">
+  <a id="close-customlightbox" class="lb-animate" href="#!"></a>
+</div>
+<!-- lightbox done -->
 
     <footer>
-
-        <div id="nondisclaimer">
-            <div class="copy">&copy;
-                Copyright 2022 :: WeLovePets.com
-            </div>
-            <div id="disclaimer">
-                <p>This website is designed and created solely for educational purposes only at Westcliff University.
-                    All contents are not intended for any commercial gain or use.</p>
-            </div>
+      <div id="nondisclaimer">
+        <div class="copy">&copy; Copyright 2022 :: WeLovePets.com</div>
+        <div id="disclaimer">
+          <p>
+            This website is designed and created solely for educational purposes
+            only at Westcliff University. All contents are not intended for any
+            commercial gain or use.
+          </p>
+        </div>
+      </div>
     </footer>
-    
-    <script>
-        var photos = []; //Declare an empty array to store img element
-        var fileNames = []; //Declare an empty element to store file names
-        var imageList = []; //Declare an empty array to store html list that contain an image
-        var image; //Declare an empty variable to store the assembled list code
-        var imagefilenames = [];
-        var openList = "<li id='photo'>"; //Declare a variable to contain open list tag
-        var closeList = "</li>"; //Declare a variable to contain a close list tag
-        var openCaptionTag = "<h1 id = 'names'>" //Declare variable for list of names
-        var captions = [];
-        var captionTexts = ["Cooper", "Jack and Kane", "Campbell", "Babe", "Mike", "Jake", "Jane", "Lucy", "Saucy", "Booster"];
-        var closeCaptionTag = "</h1>" //Declare close of list names
-        var descriptionOpen = "<p class='description'(";
-        var descriptionClose = ")'>"
-        var closeDescriptionTag = "</p>"
-        var descTexts = ["Just Hanging" , "Play Fight" , "Love Soccer" , "Smile Big" , "I'm coming!" , "Play Ball" , "Afternoon Hang" , "Let's Read" , "Pure Joy!" , "Scooting along"];
-        var descriptions = [];
 
-        //Create loop to create 10 images starting with index of 0
-        for (var i = 0; i < 10; i++) {
-            fileNames.push("animal" + (i + 1));
-            photos.push("<img src='images/" + fileNames[i] + ".jpg'>"); //Assemble file name into image element and store in an array
-            captions.push(openCaptionTag + captionTexts[i] + closeCaptionTag);
-            descriptions.push(descriptionOpen + [i] + descriptionClose + descTexts[i] + closeDescriptionTag);  
-            image = openList + photos[i] + descriptions[i] + captions[i] + closeList; //Assemble image element from array with list, must open and close caption/description
-            imageList.push(image); //Store(push) the assembled list codes into an array
-            }
-        //Display all six image codes stored in the array
-        document.getElementById("Pets").innerHTML = imageList.join(" "); //.join (" ") to get rid of ,
-        
-       
-        
-            
-    
-
-    </script>
-</body>
+    <script src="info.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
 </html>
