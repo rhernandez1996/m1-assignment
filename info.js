@@ -98,8 +98,27 @@ function hideInfo() {
 
 
 //Lightbox
-
 $(".pic > img").click(function () {
   var srcToCopy = $(this).attr("src");
   $("body").find(".imgsrc").attr("src", srcToCopy);
 });
+
+$(document).ready(function () {
+  /* Open lightbox on button click */
+  $(".lightbox-toggle img").click(function () {
+    $(".backdrop").animate({ opacity: ".50" }, 300, "linear").css("display", "block");
+    $(".box").fadeIn();
+
+     
+    //Get text content in attribute
+    var altvalue = $(this).attr('alt'); //or var altvalue = $(this).attr('alt');
+
+    if (altvalue == "animal") {
+      var img = $("#photo:nth-child(1) img").clone(); //Duplicate DOM element
+      $(".box").append(img); //Insert duplicated element in another element
+    }
+  });
+
+  //Check if lightbox has an image
+  if ($(".box").contents("img")) {
+
